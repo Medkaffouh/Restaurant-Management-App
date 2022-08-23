@@ -13,7 +13,7 @@
 <script>
 import axios from "axios";
 export default {
-  name: "SignUp",
+  name: "SignUpComponent",
   data() {
     return {
       name: "",
@@ -40,6 +40,10 @@ export default {
 </script>
 
 <style>
+.container{
+    text-align: center;
+  margin-top: 60px;
+}
 .logo {
   font-weight: 700;
   font-size: 70px;
