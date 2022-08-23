@@ -11,6 +11,24 @@
       "email": "mohamed@gmail.com",
       "password": "123456",
       "id": 2
+    },
+    {
+      "email": "Qui dolorem ipsum c",
+      "password": "Pa$$w0rd!",
+      "name": "Asperiores eiusmod m",
+      "id": 3
+    },
+    {
+      "email": "morad@gmail.com",
+      "password": "123456",
+      "name": "Morad",
+      "id": 4
+    },
+    {
+      "email": "ines@gmail.com",
+      "password": "123456",
+      "name": "Ines",
+      "id": 5
     }
   ]
 }
