@@ -47,6 +47,12 @@
       "password": "12345",
       "name": "toto",
       "id": 8
+    },
+    {
+      "email": "test@gmail.com",
+      "password": "123456",
+      "name": "test",
+      "id": 9
     }
   ]
 }
