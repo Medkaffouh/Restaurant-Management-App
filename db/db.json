@@ -54,5 +54,25 @@
       "name": "test",
       "id": 9
     }
+  ],
+  "restaurant":[
+    {
+      "id":1,
+      "name": "Burger king",
+      "contact": 112121,
+      "address": "1st Noida street" 
+    },
+    {
+      "id":2,
+      "name": "Dominos",
+      "contact": 232422,
+      "address": "2st 23 gurur street"
+    },
+    {
+      "id":3,
+      "name": "KFC",
+      "contact": 797632,
+      "address": "1st delei CP street" 
+    }
   ]
 }
