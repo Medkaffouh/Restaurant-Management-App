@@ -1,12 +1,12 @@
 <template>
   <div class="container">
     <h1 class="logo">RESTO</h1>
-    <h1>Login</h1>
+    <h1 class="title">Login</h1>
     <div class="login">
       <input type="text" v-model="email" placeholder="Enter Email" />
       <input type="password" v-model="password" placeholder="Enter Password" />
       <button v-on:click="login" class="button">Login</button>
-      <p>
+      <p class="link">
         <router-link to="/sign-up">Sign Up</router-link>
       </p>
     </div>
@@ -53,6 +53,10 @@ export default {
   color: teal;
 }
 
+.title{
+    padding-bottom: 10px;
+}
+
 .login input {
   width: 300px;
   height: 30px;
@@ -81,5 +85,9 @@ export default {
 }
 .button:hover {
   background-color: rgb(35, 166, 166);
+}
+
+.link{
+  padding: 10px 20px;
 }
 </style>
