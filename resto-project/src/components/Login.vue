@@ -28,18 +28,18 @@ export default {
         `http://localhost:3000/users?email=${this.email}&password=${this.password}`
       );
       console.log(result);
-      if (result.status == 200 && result.data.length>0) {
+      if (result.status == 200 && result.data.length > 0) {
         localStorage.setItem("user-info", JSON.stringify(result.data[0]));
         this.$router.push({ name: "Home" });
       }
     },
   },
-  mounted(){
+  mounted() {
     let result = localStorage.getItem("user-info");
-    if(result){
-        this.$router.push({name:"Home"});
+    if (result) {
+      this.$router.push({ name: "Home" });
     }
-  }
+  },
 };
 </script>
 <style scoped>
