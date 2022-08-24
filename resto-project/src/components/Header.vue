@@ -3,7 +3,6 @@
     <div class="list">
       <router-link to="/" class="listItem">Home</router-link>
       <router-link to="/add" class="listItem">Add Restaurant</router-link>
-      <router-link to="/update" class="listItem">Update Restaurant</router-link>
       <a v-on:click="logout" class="listItem">Logout</a>
     </div>
   </div>
