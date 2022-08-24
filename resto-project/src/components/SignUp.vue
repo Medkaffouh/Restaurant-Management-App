@@ -7,6 +7,9 @@
       <input type="text" v-model="email" placeholder="Enter Email" />
       <input type="password" v-model="password" placeholder="Enter Password" />
       <button v-on:click="signUp()" class="button">Sign Up</button>
+      <p>
+        <router-link to="/login">Login</router-link>
+      </p>
     </div>
   </div>
 </template>
@@ -45,7 +48,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .container{
     text-align: center;
   margin-top: 60px;
