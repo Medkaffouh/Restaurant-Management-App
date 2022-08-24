@@ -55,24 +55,42 @@
       "id": 9
     }
   ],
-  "restaurant":[
+  "restaurant": [
     {
-      "id":1,
+      "id": 1,
       "name": "Burger king",
       "contact": 112121,
-      "address": "1st Noida street" 
+      "address": "1st Noida street"
     },
     {
-      "id":2,
+      "id": 2,
       "name": "Dominos",
       "contact": 232422,
       "address": "2st 23 gurur street"
     },
     {
-      "id":3,
+      "id": 3,
       "name": "KFC",
       "contact": 797632,
-      "address": "1st delei CP street" 
+      "address": "1st delei CP street"
+    },
+    {
+      "name": "RCB Restaurant",
+      "contact": 22323,
+      "address": "1st rohini CP",
+      "id": 4
+    },
+    {
+      "name": "ress3",
+      "address": "1st street new",
+      "contact": "83283",
+      "id": 6
+    },
+    {
+      "name": "IceBerge",
+      "address": "2 street of legents",
+      "contact": "99999",
+      "id": 7
     }
   ]
 }
