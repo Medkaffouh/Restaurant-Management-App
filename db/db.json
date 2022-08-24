@@ -63,12 +63,6 @@
       "address": "1st Noida street"
     },
     {
-      "id": 2,
-      "name": "Dominos",
-      "contact": 232422,
-      "address": "2st 23 gurur street"
-    },
-    {
       "name": "KFC",
       "address": "1st delei CP street",
       "contact": "79763299",
@@ -79,12 +73,6 @@
       "contact": 22323,
       "address": "1st rohini CP",
       "id": 4
-    },
-    {
-      "name": "ress3",
-      "address": "1st street new",
-      "contact": "83283",
-      "id": 6
     },
     {
       "name": "IceBerger",
