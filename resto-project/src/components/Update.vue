@@ -6,12 +6,13 @@
       <input type="text" name="name" v-model="restaurant.name" placeholder="Enter Name" />
       <input type="text" name="address" v-model="restaurant.address" placeholder="Enter Address" />
       <input type="text" name="contact" v-model="restaurant.contact" placeholder="Enter Contact" />
-      <button v-on:click="addRestaurant" type="button" class="button">Update Restaurant</button>
+      <button v-on:click="updateRestaurant" type="button" class="button">Update Restaurant</button>
     </form>
   </div>
 </template>
 <script>
-import HeaderComponent from "./Header.vue"
+import HeaderComponent from "./Header.vue";
+import axios from "axios";
 export default {
   name: 'UpdateComponent',
   components:{
@@ -26,11 +27,28 @@ export default {
       }
     }
   },
-  mounted() {
+  methods:{
+    async updateRestaurant(){
+      let result = await axios.put("http://localhost:3000/restaurant/"+this.$route.params.id,{
+        name: this.restaurant.name,
+        address: this.restaurant.address,
+        contact: this.restaurant.contact
+      });
+      if(result.status==200){
+        this.$router.push({name:"Home"})
+      }
+        console.log(result);
+    }
+  },
+  async mounted() {
     let user= localStorage.getItem('user-info');
     if(!user){
       this.$router.push({name:'Login'})
     }
+    const result = await axios.get('http://localhost:3000/restaurant/'+this.$route.params.id);
+    //console.warn(this.$route.params.id)
+    console.warn(result)
+    this.restaurant=result.data
   }
 };
 </script>
