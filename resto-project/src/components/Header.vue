@@ -1,22 +1,22 @@
 <template>
   <div class="container">
-    <ul class="list">
-      <li class="listItem">Home</li>
-      <li class="listItem">Add Restaurant</li>
-      <li class="listItem">Update Restaurant</li>
-      <li v-on:click="logout" class="listItem">Logout</li>
-    </ul>
+    <div class="list">
+      <router-link to="/" class="listItem">Home</router-link>
+      <router-link to="/add" class="listItem">Add Restaurant</router-link>
+      <router-link to="/update" class="listItem">Update Restaurant</router-link>
+      <a v-on:click="logout" class="listItem">Logout</a>
+    </div>
   </div>
 </template>
 <script>
 export default {
   name: "HeaderComponent",
-  methods:{
-    logout(){
-        localStorage.clear();
-        this.$router.push({name:'Login'})
-    }
-  }
+  methods: {
+    logout() {
+      localStorage.clear();
+      this.$router.push({ name: "Login" });
+    },
+  },
 };
 </script>
 <style scoped>
@@ -33,6 +33,8 @@ export default {
 }
 
 .listItem {
+  text-decoration: none;
+  color: white;
   display: inline;
   margin-right: 30px;
   font-size: 14px;
@@ -42,7 +44,7 @@ export default {
   border-radius: 5px;
 }
 
-.listItem:hover{
-    background-color: rgb(8, 187, 187);
+.listItem:hover {
+  background-color: rgb(8, 187, 187);
 }
 </style>
